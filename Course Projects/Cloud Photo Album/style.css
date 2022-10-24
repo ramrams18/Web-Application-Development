@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+h2 {
+    display: block;
+    border-bottom: 1px solid #333;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 10px 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.content-wrapper {
+    width: 30%;
+    padding: 20px;
+    border: 2px solid #333;
+}
+
+.img-wrapper {
+    width: 70%;
+    padding: 20px;
+    margin-left: 20px;
+    border: 2px solid #333;
+}
+
+.list-wrapper {
+    margin-top: 40px;
+    word-wrap: break-word;
+}
+
+.img-wrapper img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.msg {
+    color: red;
+}

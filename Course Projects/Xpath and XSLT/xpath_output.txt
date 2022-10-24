@@ -1,0 +1,18 @@
+XPath query: //SigmodRecord/issue/articles/article[authors/author='David Maier']/title
+<title>Fragments of Relations.</title><title>Windows on the World.</title>
+
+XPath query: //SigmodRecord/issue/articles/article[authors/author[@position='00']='David Maier']/title
+<title>Fragments of Relations.</title><title>Windows on the World.</title>
+
+XPath query: //SigmodRecord/issue/articles/article[authors/author='David Maier' and authors/author='Stanley B. Zdonik']/title
+
+
+XPath query: //SigmodRecord/issue[volume=19 and number=2]/articles/article/title
+
+
+XPath query: //SigmodRecord/issue[volume=19 and number=2]/articles/article/title | //SigmodRecord/issue[volume=19 and number=2]/articles/article/initPage | //SigmodRecord/issue[volume=19 and number=2]/articles/article/endPage
+
+
+XPath query: //SigmodRecord/issue[articles/article/authors/author='David Maier']/volume | //SigmodRecord/issue[articles/article/authors/author='David Maier']/number
+<volume>13</volume><number>4</number>
+

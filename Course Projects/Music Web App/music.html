@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>A Music Web Application</title>
+  <meta charset="utf-8" />
+  <script type="text/javascript" src="music.js"></script>
+</head>
+
+<body>
+  <form>
+    <label>Artist name: <input type="text" id="form-input" /></label>
+    <input type="button" onclick="sendRequest();" value="Display Info" />
+  </form>
+
+  <div id="container">
+    <div id="artist">
+      <!-- Artist metadata -->
+      <div id="image-container">
+        <div>
+          <h1 id="name"></h1>
+          <a href="#" id="webpage"></a>
+        </div>
+        <img src="" id="pic" />
+      </div>
+      <p id="bio"></p>
+      <!-- Top albums -->
+      <div id="top-albums">
+        <h2></h2>
+        <ul></ul>
+      </div>
+    </div>
+    <!-- Similar artists -->
+    <div id="similar">
+      <h2></h2>
+      <ul></ul>
+    </div>
+  </div>
+
+</body>
+
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 20px;
+  }
+
+  #container {
+    display: flex;
+  }
+
+  #image-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #artist {
+    display: inline-block;
+    width: 80%;
+    margin-right: 20px;
+  }
+
+  #similar {
+    display: inline-block;
+    width: 15%;
+  }
+
+  #top-albums ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #top-albums ul li {
+    width: 22%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #eee;
+    list-style: none;
+  }
+
+  #top-albums ul li img {
+    width: 100%;
+  }
+</style>
+
+</html>
